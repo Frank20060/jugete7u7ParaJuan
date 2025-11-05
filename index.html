@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugete de mi Infancia </title>
+    <style>
+        /* Reset rápido */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
 
+        header{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        header img{
+            width: 30vw;
+        }
+
+        body {
+            background: #1a1a1a;
+            color: #f0f0f0;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff4d4d;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px #000;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 20px;
+        }
+
+        main div:first-child {
+            background: #2a2a2a;
+            border: 2px solid #ff4d4d;
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            transition: transform 0.3s, box-shadow 0.3s;
+            flex: 1; /* Ocupa el espacio restante */
+        }
+
+        main div:first-child:hover {
+            transform: scale(1.05) rotate(-1deg);
+            box-shadow: 0 0 20px #ff4d4d, 0 0 40px #ff1a1a inset;
+        }
+
+        .divImagen{
+            width: fit-content;
+            height: fit-content;
+            border: 2px solid #ff4d4d;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        a{
+            color: rgba(212, 57, 0, 0.801);
+            font-weight: 600;
+        }
+
+        .divImagen img{
+            display: block;
+            max-width: 300px;
+            height: auto;
+        }
+        .divImagen:hover{
+            animation: vibrar 0.3s infinite;
+        }
+
+        strong {
+            color: #ffcc00;
+        }
+
+        em {
+            color: #66ff66;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        p {
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        iframe {
+            width: 30%;
+            margin-left: 35%;
+            
+            
+        }
+
+        @keyframes vibrar {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(0); }
+        }
+
+        main div:first-child:hover p, main div:first-child:hover iframe {
+            animation: vibrar 0.3s infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/Call_of_Duty_Black_Ops_2_Logo.svg.png" alt="Logo call of douty">
+    </header>
+    <main>
+        <div>
+            <p>Horas y horas con mi hermano pegados a esta <strong>joya</strong> de los videojuegos. Para mí, sin duda, el <em>mejor</em> de toda la saga Call of Duty. ¿Para qué estudiar cuando puedes masacrar zombies y no tener que soportar a tu profesor de programación?</p>
+
+            <p>Este juego marcó un antes y un después en mi infancia. Desde que dejé de jugarlo, no he conseguido la dopamina suficiente ni para sonreír. Literalmente, siento que necesito un zombie para levantarme el ánimo.</p>
+
+            <p>Es el regalo perfecto para un niño: mientras sube de nivel las armas durante horas, <strong>no molestará a nadie</strong>. Y oye, con el panorama actual, quién sabe… igual lo estás entrenando para una catástrofe zombie o, directamente, la tercera guerra mundial. Todo un plan de supervivencia encubierto.</p>
+
+            <p>Juan, yo te he dado la idea; tú solo tienes que darme ese numerín. Y recuerda: si alguien pregunta, es <em>solo un juego</em>. Aunque todos sabemos la verdad… la adicción a las armas virtuales puede ser más peligrosa que un apocalipsis real.</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cslofC8TFY8?si=AqMnqkvLr-gsvfVe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" autoplay allowfullscreen></iframe>
+        </div>
+        <div class="divImagen">
+            <img src="img/12719.jpg" alt="caratula call of douty">
+
+            <a target="_blank" href="https://www.amazon.es/Call-Duty-Black-Ops-II/dp/B009IEFX9M/ref=sr_1_1?dib=eyJ2IjoiMSJ9.TQ9vlr4_Cr2FWR3cg9TKNsD1UI679Y78hcdiLWidGjx1uNP13ez0jBvubDD-MyNVczJ1XzeYInzq2D6qZAfmQ916DLf9p4JGbpOmwyJEM0OiCwViAoUhHIjoJFKodGMRFQokuWKjtXlNpnNJFsaxnIxtiyqBJxbO94DbxW5E4_O-R-8Sd5sefHlP9fRSYYbMXUSYat7hfeRpkbTPkz0vb28oZbvx2RSQ6WBs_wwIdLdvpTVsRQBKB9IRlpsfgYJmi8ZuWx9KBcEblJF9u6mA2PfcseAmEZ-c5MyMCV5SQdY.Po6EnjYpphKFwgnEkYQLqO3MFHunLxgHI7MoKa4dVv0&dib_tag=se&keywords=black%2Bops%2B2&qid=1762370043&sr=8-1&th=1">Enlace de compra</a>
+        </div>
+    </main>
+</body>
+</html>
